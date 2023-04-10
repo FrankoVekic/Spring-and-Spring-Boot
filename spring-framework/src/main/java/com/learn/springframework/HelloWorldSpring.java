@@ -1,6 +1,8 @@
 package com.learn.springframework;
 
 
+import java.util.Arrays;
+
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.learn.springframework.game.MarioGame;
@@ -31,7 +33,15 @@ public class HelloWorldSpring {
 		
 		System.out.println(context.getBean("address2"));
 		
-		//System.out.println(context.getBean(Address.class));
+		System.out.println(context.getBean(Person.class));
+		
+		System.out.println(context.getBean(Address.class));
+		
+		System.out.println(context.getBean("person5Qualifier"));
+		
+		//Arrays.stream(context.getBeanDefinitionNames())
+		//.forEach(System.out::println);
+		
 	}
 
 }
