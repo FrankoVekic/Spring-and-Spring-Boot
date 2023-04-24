@@ -8,7 +8,6 @@
 </head>
 <body>
 	<div class="container">
-		<div>
 			<h1>Your Todos</h1>
 			<table class="table">
 				<thead>
@@ -28,7 +27,7 @@
 					</tr>
 				</c:forEach>
 			</table>
-		</div>
+			<a href="add-todo" class="btn btn-success">Add Todo</a>
 	</div>
 	<script src="webjars/bootstrap/5.2.3/js/bootstrap.min.js"></script>
 	<script src="webjars/jquery/3.6.4/jquery.min.js"></script>
