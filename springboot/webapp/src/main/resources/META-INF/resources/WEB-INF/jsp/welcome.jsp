@@ -6,6 +6,7 @@
 	<div>
 		Welcome ${name }
 	</div>
+	<hr>
 	<div>
 	Your Name: ${name }
 	</div>
