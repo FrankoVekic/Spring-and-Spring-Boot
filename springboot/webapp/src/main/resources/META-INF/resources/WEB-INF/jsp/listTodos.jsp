@@ -4,7 +4,7 @@
 </head>
 	<body>
 	<div>
-		Welcome Franko
+		Welcome ${name }
 	</div>
 	<div>
 	Your Todos are ${todos }
