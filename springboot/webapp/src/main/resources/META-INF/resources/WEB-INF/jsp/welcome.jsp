@@ -1,15 +1,11 @@
 <html>
 	<head>
-	<title> Welcome Page</title>
-</head>
+		<title> Welcome Page</title>
+	</head>
 	<body>
-	<div>
-		Welcome ${name }
+		<div class="container">
+			<h1>Welcome ${name }</h1>	
+			<a href="list-todos">Manage</a> your todos
 	</div>
-	<hr>
-	<div>
-	Your Name: ${name }
-	</div>
-	<div><a href="list-todos">Manage</a> your todos</div>
 	</body>
 </html>
