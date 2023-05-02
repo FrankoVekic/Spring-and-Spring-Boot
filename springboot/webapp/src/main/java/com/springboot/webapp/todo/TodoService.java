@@ -17,12 +17,12 @@ public class TodoService {
 	private static int todosCount = 0;
 
 	static {
-		todos.add(new Todo(++todosCount, "Franko", "Get AWS Certified", LocalDate.now().plusYears(1), false));
+		todos.add(new Todo(++todosCount, "Franko", "Get AWS Certified 1", LocalDate.now().plusYears(1), false));
 
-		todos.add(new Todo(++todosCount, "Franko", "Learn DevOps", LocalDate.now().plusYears(2), false));
+		todos.add(new Todo(++todosCount, "Franko", "Learn DevOps 1", LocalDate.now().plusYears(2), false));
 
 		todos.add(
-				new Todo(++todosCount, "Franko", "Learn Full Stack Development", LocalDate.now().plusYears(3), false));
+				new Todo(++todosCount, "Franko", "Learn Full Stack Development 1", LocalDate.now().plusYears(3), false));
 	}
 
 	public List<Todo> findByUsername(String username) {
