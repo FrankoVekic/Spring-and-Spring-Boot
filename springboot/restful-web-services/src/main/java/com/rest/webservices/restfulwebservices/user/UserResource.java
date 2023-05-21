@@ -32,18 +32,18 @@ public class UserResource {
 		return service.findAll();
 	}
 
-
 	@GetMapping("/users/{id}")
 	public EntityModel<User> retrieveUser(@PathVariable int id) {
 		User user = service.findOne(id);
 
 		if (user == null)
 			throw new UserNotFoundException("id:" + id);
-		
+
 		EntityModel<User> entityModel = EntityModel.of(user);
-		
+
 		WebMvcLinkBuilder link = linkTo(methodOn(this.getClass()).retrieveAllUsers());
 		entityModel.add(link.withRel("all-users"));
+
 		return entityModel;
 	}
 
