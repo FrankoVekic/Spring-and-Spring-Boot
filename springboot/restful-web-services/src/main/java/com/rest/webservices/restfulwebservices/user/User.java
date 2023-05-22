@@ -10,8 +10,12 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
-@Entity(name ="user_details")
+@Entity(name = "user_details")
 public class User {
+
+	protected User() {
+
+	}
 
 	@Id
 	@GeneratedValue
