@@ -31,9 +31,9 @@ public class User {
 	@Past(message = "Birth Date should be in the past")
 	@JsonProperty("birth_date")
 	private LocalDate birthDate;
-	
+
 	@OneToMany(mappedBy = "user")
-	@JsonIgnore
+	//@JsonIgnore
 	private List<Post> posts;
 
 	public User(Integer id, String name, LocalDate birthDate) {
@@ -65,6 +65,14 @@ public class User {
 
 	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
+	}
+
+	public List<Post> getPosts() {
+		return posts;
+	}
+
+	public void setPosts(List<Post> posts) {
+		this.posts = posts;
 	}
 
 	@Override
