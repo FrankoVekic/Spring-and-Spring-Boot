@@ -7,7 +7,10 @@ export default function Counter(){
 
     function incrementCounterFunction(){     
         setCount(count + 1)
-        console.log(count)
+    }
+
+    function decrementCounterFunction(){
+        setCount(count - 1)   
     }
 
     return (
@@ -16,6 +19,8 @@ export default function Counter(){
                 <div>
                     <button className="counterButton" 
                             onClick={incrementCounterFunction}>+1</button>
+                     <button className="counterButton" 
+                            onClick={decrementCounterFunction}>-1</button>
                 </div>
             </div>
     )
