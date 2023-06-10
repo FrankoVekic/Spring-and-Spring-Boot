@@ -20,3 +20,15 @@
     color: #00a5ab;
     font-size:150px;
 }
+
+.resetButton
+{
+    font-size:30px;
+    background-color: #4d0170;
+    width: 300px;
+    margin:30px;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 2px;
+}
