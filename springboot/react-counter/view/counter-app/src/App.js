@@ -9,14 +9,14 @@ function App() {
   );
 }
 
-function Props({property1, property2}){
+//function Props({property1, property2}){
 
-  console.log(property1)
-  console.log(property2)
+//  console.log(property1)
+//  console.log(property2)
 
-  return (
-    <div>Props</div>
-  )
-}
+//  return (
+//    <div>Props</div>
+//  )
+//}
 
 export default App;
