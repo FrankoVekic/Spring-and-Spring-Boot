@@ -3,15 +3,11 @@ import { useAuth } from './security/AuthContext'
 
 function HeaderComponent(){
 
-    //const authContext = useContext(AuthContext)
-
     const authContext = useAuth()
     const isAuthenticated = authContext.isAuthenticated
 
-    //console.log(authContext.number);
-
     function logout(){
-        authContext.setAuthenticated(false)
+        authContext.logout()
     }
 
     return (
